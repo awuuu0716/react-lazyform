@@ -45,12 +45,12 @@ const App = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(`報名成功!您的報名資料為:
-暱稱:${formData.nickname}
-電子郵件:${formData.email}
-怎麼知道這個活動的?:${formData.informed}
-報名類型:${formData.type}
-其他:${formData.others}
+    alert(`報名成功！您的報名資料為：
+暱稱：${formData.nickname}
+電子郵件：${formData.email}
+怎麼知道這個活動的：${formData.informed}
+報名類型：${formData.type}
+其他：${formData.others}
     `);
   };
 
@@ -91,15 +91,15 @@ const App = () => {
             required={true}
             value={formData.type}
             type={'radio'}
-            name={'phone'}
+            name={'type'}
             handleChange={handleChange}
           ></InputRadio>
           <Input
             label={INPUT_LABEL_INFORMED}
             required={true}
             value={formData.informed}
-            type={'informed'}
-            name={'phone'}
+            type={'text'}
+            name={'informed'}
             handleChange={handleChange}
           />
           <Input
